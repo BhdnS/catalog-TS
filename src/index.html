@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/favicon/catalog-16.png" sizes="16x16" type="image/png">
+	<link rel="shortcut icon" href="./images/favicon/catalog-32.png" sizes="16x16" type="image/png">
+	<link rel="shortcut icon" href="./images/favicon/catalog-96.png" sizes="16x16" type="image/png">
+	<title>Catalog</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<img id="theme" class="theme sun" src="./images/theme/sun.svg" alt="theme">
+		</div>
+		<div class="container">
+			<header class="header">
+				<h1 class="header_title">Catalog</h1>
+			</header>
+			<main class="main">
+				<div class="catalog">
+					<h2 class="catalog_add">Add item</h2>
+					<form action="#" id="form" class="catalog_form">
+						<div class="form_group">
+							<label class="label" for="name">Product Name:</label>
+							<input id="nameInput" class="form_group__input" type="text" required>
+						</div>
+						<div class="form_group">
+							<label class="label" for="number">Number of goods:</label>
+							<input id="priceInput" class="form_group__input" type="number" required>
+						</div>
+						<button id="btn" type="submit" class="form_btn btn">Submit</button>
+					</form>
+				</div>
+				<table class="all">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Price</th>
+							<th>Delete</th>
+						</tr>
+					</thead>
+					<tbody id="tbody"></tbody>
+				</table>
+				<button id="clear" class="btn">Clear</button>
+			</main>
+		</div>
+	</div>
+</body>
+</html>
