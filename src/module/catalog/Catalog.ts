@@ -35,6 +35,7 @@ export class Catalog {
         const row = targetElement.closest('tr');
         row?.remove();
         this.updateLocalStorage();
+        this.tbodyChild();
       }
     });
   }
@@ -50,6 +51,12 @@ export class Catalog {
     if (this.tbody) {
       const text: string = this.tbody.innerHTML;
       localStorage.setItem('userText', text);
+    }
+  }
+
+  private tbodyChild(): void {
+    if (this.tbody && this.tbody.childElementCount === 0) {
+      Catalog.count = 0;
     }
   }
 
