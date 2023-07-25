@@ -1,0 +1,13 @@
+@media (min-width: 1000px) {
+	.btn:hover {
+		background-color: gainsboro;
+		transition-duration: 0.5s;
+		box-shadow: 5px 5px 5px black;
+	}
+
+	img:hover {
+		transform: rotate(45deg);
+		transition-duration: 0.5s;
+	}
+
+}
