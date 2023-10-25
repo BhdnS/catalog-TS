@@ -24,6 +24,10 @@ export class Catalog {
       if (this.tbody) {
         this.tbody.insertAdjacentHTML('beforeend', text);
         this.updateLocalStorage();
+        if (this.nameInput && this.priceInput) {
+          this.nameInput.value = '';
+          this.priceInput.value = '';
+        }
       }
     });
   }
