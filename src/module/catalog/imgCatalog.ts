@@ -1,0 +1,1 @@
+export const del: string = require('../../images/del.svg');

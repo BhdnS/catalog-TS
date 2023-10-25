@@ -1,0 +1,105 @@
+.dark {
+	color: white;
+	background-color: rgba(0, 33, 115, 0.721);
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.theme {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.header {
+
+		&_title {
+			text-align: center;
+			font-size: 3rem;
+			padding-top: 20px;
+		}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
+.catalog {
+
+		&_add {
+			text-align: center;
+			font-size: 2.5rem;
+			margin-top: 20px;
+		}
+
+		&_form {
+			display: flex;
+			flex-direction: column;
+		}
+}
+.form {
+
+	max-width: 800px;
+
+		&_group {
+			font-size: 2rem;
+			margin-top: 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+}
+.form_group {
+
+		&__input {
+			max-width: 400px;
+			width: 100%;
+			padding: 7px;
+			font-size: 2rem;
+			border-radius: 6px;
+			border: 2px solid black;
+		}
+
+}
+
+.all {
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.btn {
+	max-width: 200px;
+	width: 100%;
+	cursor: pointer;
+	transition-duration: 0.5s;
+	align-self: center;
+	margin: 20px 0px 20px 0px;
+	padding: 5px;
+	font-size: 2rem;
+	border-radius: 6px;
+	color: black;
+	background-color: gainsboro;
+}
+
+.btn:active {
+	background-color: gray;
+	transition-duration: 0.5s;
+	box-shadow: 1px 1px 1px black;
+}
+
+.label {
+	padding-bottom: 10px;
+}
+
+img {
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
